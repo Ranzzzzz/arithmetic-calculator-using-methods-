@@ -9,9 +9,9 @@ public class ReNew{
         int num1Add, num2Add, sum;
         
         System.out.println("Enter 2 numbers to add");
-        System.out.print("First Number: ");
+        System.out.println("First Number: ");
         num1Add = input.nextInt();
-        System.out.print("Second Number: ");
+        System.out.println("Second Number: ");
         num2Add = input.nextInt();
         sum = num1Add + num2Add;
         
@@ -25,20 +25,30 @@ public class ReNew{
         System.out.println("Enter 2 numbers to subtract");
         System.out.print("First Number: ");
         num1Sub = input.nextInt();
-        System.out.print("Second Number: ");
+        System.out.println("Second Number: ");
         num2Sub = input.nextInt();
         diff = num1Sub - num2Sub;
         
         System.out.println("The difference is: " + diff);
     }
     
+    
+    
+    
+    
+    // This is the method for Multiplication, Code By: LANZ
+    public void multiplication(){
+        int uno,dos,resultado;
+        
+        System.out.println("Enter 2 numbers to multiply");
+        System.out.println("First Number: ");
+        uno = input.nextInt();
+        System.out.println("Second Number: ");
+        dos = input.nextInt();
+        resultado = uno * dos;
+        
+        System.out.println("The product is: " + resulatado);
     }
-    
-    
-    
-    // This is the method for Multiplication
-    
-    /*write your code here!*/
     
     
     
@@ -67,6 +77,7 @@ public class ReNew{
         ReNew object = new ReNew();
         object.addition(); //calling the method addition
         object.subtraction(); //calling the method subtraction
+        object.multiplication(); //calling the method multiplication
         object.devision(); //calling the method devision
     }
 }
