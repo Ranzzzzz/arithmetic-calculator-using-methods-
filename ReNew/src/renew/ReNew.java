@@ -23,7 +23,7 @@ public class ReNew{
         int num1Sub, num2Sub, diff;
         
         System.out.println("Enter 2 numbers to subtract");
-        System.out.print("First Number: ");
+        System.out.println("First Number: ");
         num1Sub = input.nextInt();
         System.out.println("Second Number: ");
         num2Sub = input.nextInt();
@@ -47,7 +47,7 @@ public class ReNew{
         dos = input.nextInt();
         resultado = uno * dos;
         
-        System.out.println("The product is: " + resulatado);
+        System.out.println("The product is: " + resultado);
     }
     
     
