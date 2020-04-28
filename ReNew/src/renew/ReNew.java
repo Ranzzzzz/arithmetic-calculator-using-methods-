@@ -32,13 +32,22 @@ public class ReNew{
         System.out.println("The difference is: " + diff);
     }
     
+    
+    
+    
+    
+    // This is the method for Multiplication, Code By: LANZ
+    public static void multiplication(){
+        int uno,dos,resultado;
+        System.out.println("Enter 2 numbers to multiply");
+        System.out.println("First Number: ");
+        uno = input.nextInt();
+        System.out.println("Second Number: ");
+        dos = input.nextInt();
+        resultado = uno * dos;
+        
+        System.out.println("The product is: " + resulatado);
     }
-    
-    
-    
-    // This is the method for Multiplication
-    
-    /*write your code here!*/
     
     
     
@@ -67,5 +76,7 @@ public class ReNew{
         ReNew object = new ReNew();
         object.addition(); //calling the method addition
         object.subtraction(); //calling the method subtraction
+        object.multiplication(); //calling the method mulitplication
+        object.division(); //calling the method division
     }
 }
