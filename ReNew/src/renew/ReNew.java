@@ -4,80 +4,67 @@ import java.util.Scanner;
 public class ReNew{
     Scanner input = new Scanner(System.in);
     
+    // global variables so that every method can access it
+    int num1, num2;
+    
+    // initialization of the class getInput
+    getInput inputGet = new getInput();
+   
+    class getInput{
+        //This is a method for getting input
+        public void getUserInput(){
+            System.out.print("First Number: ");
+            num1 = input.nextInt();
+            System.out.print("Second Number: ");
+            num2 = input.nextInt();
+        }
+    }
+    
     // This is the method for Addition, Code By: QUEL
     public void addition(){
-        int num1Add, num2Add, sum;
-        
         System.out.println("Enter 2 numbers to add");
-        System.out.println("First Number: ");
-        num1Add = input.nextInt();
-        System.out.println("Second Number: ");
-        num2Add = input.nextInt();
-        sum = num1Add + num2Add;
-        
+        inputGet.getUserInput();
+        int sum = num1 + num2;
         System.out.println("The sum is: " + sum);
     }
     
     // This is the method for Subtraction, Code By: GAB
     public void subtraction(){
-        int num1Sub, num2Sub, diff;
-        
         System.out.println("Enter 2 numbers to subtract");
-        System.out.println("First Number: ");
-        num1Sub = input.nextInt();
-        System.out.println("Second Number: ");
-        num2Sub = input.nextInt();
-        diff = num1Sub - num2Sub;
-        
+        inputGet.getUserInput();
+        int diff = num1 - num2;
         System.out.println("The difference is: " + diff);
     }
-    
-    
-    
-    
-    
+   
     // This is the method for Multiplication, Code By: LANZ
     public void multiplication(){
-        int uno,dos,resultado;
-        
         System.out.println("Enter 2 numbers to multiply");
-        System.out.println("First Number: ");
-        uno = input.nextInt();
-        System.out.println("Second Number: ");
-        dos = input.nextInt();
-        resultado = uno * dos;
-        
+        inputGet.getUserInput();
+        int resultado = num1 * num2;
         System.out.println("The product is: " + resultado);
     }
     
-    
-    
-    // This is the method for Division
-    
-    /*By Rashed*/
-    public static void division(){
-        int nOne, nTwo;
-        Scanner kb = new Scanner(System.in);
-
-        System.out.println("Division");
-
-        System.out.print("\nFirst Number: ");
-        nOne = kb.nextInt();
-
-        System.out.print("\nSecond Number: ");
-        nTwo = kb.nextInt();
-
-        kb.close();
-        System.out.println("\nSum: " + nOne + " / " + nTwo + " = " + (nOne / nTwo));
+    // This is the method for Division, By Rashed
+    public void division(){
+        System.out.println("Enter two numbers to divide");
+        inputGet.getUserInput();
+        int quotient = num1/num2;
+        System.out.println("The quotient is: " + quotient);
     }
     
-    
-    
     public static void main(String[]Args){
+        Scanner inputChoice = new Scanner(System.in);
         ReNew object = new ReNew();
-        object.addition(); //calling the method addition
-        object.subtraction(); //calling the method subtraction
-        object.multiplication(); //calling the method multiplication
-        object.division(); //calling the method division
+        char userChoice;
+        
+        System.out.print("What arithmetic function would you like to use: ");
+        userChoice = inputChoice.next().charAt(0);
+        
+        switch(userChoice){
+            case '+':
+                object.addition(); //calling the method addition
+                break;
+                
+        }    
     }
 }
