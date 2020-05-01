@@ -64,6 +64,15 @@ public class ReNew{
             case '+':
                 object.addition(); //calling the method addition
                 break;
+            case '-':
+                object.subtraction(); //calling the method subtraction
+                break;
+            case '*':
+                object.multiplication(); //calling the method multiplication
+                break;
+            case '/':
+                object.division(); //calling the method division
+                break;
                 
         }    
     }
